@@ -1,0 +1,28 @@
+[GLOBAL]
+TEST = True
+TEST_WITH_NO_VERBOSE = False
+WEIGHTED_COUNTRIES = True
+PRECISION = 5
+SOURCE = raw
+START_DATE = 2020-04-27
+END_DATE = 2020-12-20
+
+WEEKLY_ANALYSIS = False
+# WEEKLY_ANALYSIS = True == > for computing weekly demo diff
+# WEEKLY_ANALYSIS = False == > for computing demo diff across entire study period
+
+[IO]
+CENSUS_DATA_FILE = ../data/population-estimate/IHME_GBD_2019_POP_2019_Y2020M10D15.CSV
+INP_DIRECTORY = ../data/bch/global/
+COUNTRY_MATADATA_FILE = ../data/bch/global/meta-data/FB_Symptom_Survey_Weighted_Country_List.csv
+COUNTRY_MATADATA_FILE_UNWEIGHTED =
+
+OUTPUT_DIR = ./test
+# OUTPUT_DIR = ./run ==> for complete run
+# OUTPUT_DIR = ./test ==> for test run
+
+OUTPUT_FILE = demo_diff_ctis_census_by_country.csv
+# OUTPUT_FILE = demo_diff_ctis_census_by_country.csv == > for computing demo diff across entire study period
+# OUTPUT_FILE = demo_diff_weekly_ctis_census_by_country.csv == > for computing weekly demo diff
+
+

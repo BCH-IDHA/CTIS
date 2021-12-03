@@ -1,0 +1,17 @@
+# ignore CTIS data files  
+data/bch/global/fbsurvey*.csv
+data
+machine_learning/run
+machine_learning/test
+demographic_measure/run
+demographic_measure/test
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

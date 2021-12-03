@@ -1,0 +1,60 @@
+[GLOBAL]
+TEST = True
+READ_FROM_DATA_PICKLE = False
+
+# df pickle file for non-hpt model
+# DATA_PICKLE_FILE = ./run/Global-lightGBM-downsample_majority_class-model-v12/df_global-ts_positive-downsampled_data-v12_LightGBM.zip
+
+# df pickle file for hpt model
+# DATA_PICKLE_FILE = ./run/Global-lightGBM-downsample-v12-ts_pos-hpt/run_model_three_LightGBM_demosx_NA/df_global-ts_pos-downsampled_data-v12_LightGBM_LightGBM_usemissing_false_LightGBM_tunned.zip
+
+# df pickle for 12 week early model
+DATA_PICKLE_FILE = ./run/early_model_12_weeks/df_global-ts_pos-downsampled_data-v12_LightGBM_LightGBM_usemissing_false.zip
+
+# external model
+RUN_EXTERNAL_MODEL = True
+# # model pickle for running a previous model on the data
+EXTERNAL_MODEL_PICKLE_FILE = ./run/early_model_2_weeks_run_2/clf_LightGBM_demo_as_covariate_global_v12_downsampled.zip
+EXTERNAL_MODEL_PICKLE_FILE_2 =./run/early_model_12_weeks_run_2/clf_LightGBM_demo_as_covariate_global_v12_downsampled.zip
+
+VERBOSE = True
+WEIGHTED_COUNTRIES = True
+SOURCE = raw
+
+PICKLE_MODEL = True
+OUTCOME_VAR = ts_pos
+# 'ts_recent' #'ts_pos'
+
+RESAMPLE_DATA = True
+## <== also implements Downscalling (implement SAMPLE_DATA = 'up' or 'down')
+
+GEN_FEATURE_IMPORTANCE = True
+PERFORM_GRID_SEARCH = False
+
+GEN_LABELED_DF = False
+# <== Used for generating labeled data that comprised of: train,test, and held-out set data (all rows)
+
+GEN_LABELED_DF_REMAINING = False
+
+SELECTED_STRATAS = demo_as_covariate
+SELECTED_MODELS = LightGBM,LightGBM_usemissing_false
+
+# START_DATE = datetime.date(2020, 4, 26)
+# END_Date = datetime.date(2020, 5, 11)
+
+[IO]
+OUTPUT_DIR = '.'
+# './run'
+
+COUNTRY_MATADATA_FILE = ./FB_Symptom_Survey_Weighted_Country_List.csv
+# './FB_Symptom_Survey_Weighted_Country_List.csv'
+# './fb_countries_unweighted.csv'
+
+# weighted countries; raw data; end date: 2021-01-18
+CTIS_DATA_DIR = ./data/bch/global/by-country-until-2021-01-18-revised
+
+# unweighted countries; raw data; end date:2020-12-20
+# './data/bch/global/by-unweighted-country-enddate-2020-12-20-revised'
+
+# weighted countries; demo-filtered; end date:2020-12-21
+# './data/bch/global/by-country-daterange-04-26-to-12-21-demo-filtered'
