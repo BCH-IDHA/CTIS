@@ -5,15 +5,19 @@ from the Facebook User Base_ ```Download Link```
 ### Citation information
 You can cite the paper and/or code using the following information shown in the BibTex format: 
 <pre>
-@article{astley2021ctis,
-  title={Global monitoring of the impact of COVID-19 pandemic 
-through online surveys Sampled from the Facebook user base},
-  author={},
-  journal={Proceedings of the National Academy of Sciences},
-  volume={},
-  number={},
-  year={2021},
-  publisher={National Acad Sciences}
+@article {Astleye2111455118,
+	author = {Astley, Christina M. and Tuli, Gaurav and Mc Cord, Kimberly A. and Cohn, Emily L. and Rader, Benjamin and Varrelman, Tanner J. and Chiu, Samantha L. and Deng, Xiaoyi and Stewart, Kathleen and Farag, Tamer H. and Barkume, Kristina M. and LaRocca, Sarah and Morris, Katherine A. and Kreuter, Frauke and Brownstein, John S.},
+	title = {Global monitoring of the impact of the COVID-19 pandemic through online surveys sampled from the Facebook user base},
+	volume = {118},
+	number = {51},
+	elocation-id = {e2111455118},
+	year = {2021},
+	doi = {10.1073/pnas.2111455118},
+	publisher = {National Academy of Sciences},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/118/51/e2111455118},
+	eprint = {https://www.pnas.org/content/118/51/e2111455118.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
 }
 </pre>
 
