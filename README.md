@@ -1,6 +1,6 @@
 ### This repository contains code and scripts used for the analysis shown in the paper titled:
 _Global Monitoring of the Impact of COVID-19 Pandemic through Online Surveys Sampled
-from the Facebook User Base_ [```Download```](https://www.pnas.org/doi/10.1073/pnas.2111455118)
+from the Facebook User Base_ <a href="https://www.pnas.org/doi/10.1073/pnas.2111455118" target="_blank">```Download```</a>
 
 
 ### Citation information
